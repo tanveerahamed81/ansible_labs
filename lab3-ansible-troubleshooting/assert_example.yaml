@@ -1,0 +1,11 @@
+
+---
+
+- name: verify nxos version
+  hosts: nxos
+  connection: network_cli
+  gather_facts: yes
+
+  tasks:
+    - nxos_facts:
+
